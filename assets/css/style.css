@@ -118,8 +118,7 @@ form textarea {
 }
 
 #join__us {
-  background-image: url(../images/cropped-Global-harvest-logo_Icon_600x600-32x32.png);
-  background-repeat: repeat-x;
+  background: url(../images/cropped-Global-harvest-logo_Icon_600x600-32x32.png) left top repeat-x, url(../images/cropped-Global-harvest-logo_Icon_600x600-32x32.png) left bottom repeat-x;
 }
 
 #join__us form textarea {
