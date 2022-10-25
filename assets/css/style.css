@@ -165,6 +165,10 @@ footer p {
   .main__intro {
     width: 80%;
   }
+
+  #our__mission {
+    background-attachment: initial;
+  }
 }
 
 @media (max-width: 466px) {
