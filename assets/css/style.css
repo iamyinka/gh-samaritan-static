@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&family=Signika+Negative:wght@700&display=swap");
+
+/* font-family: 'Signika Negative', sans-serif; */
+
+/* General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Signika Negative", sans-serif;
+  font-size: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar-brand img {
+  width: 120px;
+}
+
+main {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+main img {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.main__intro {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  background-color: rgba(10, 10, 10, 0.67);
+  padding: 0.85rem;
+  border-radius: 1.2rem;
+  min-width: 30%;
+  /* font-size: 0.85rem; */
+}
+
+.main__intro span {
+  /* display: block; */
+  font-size: 2rem;
+  font-style: italic;
+  color: rgba(249, 220, 52, 0.78);
+  animation: animateTitle 3s infinite alternate-reverse;
+}
+
+section {
+  padding: 3rem 0;
+  background: rgba(252, 252, 252, 0.32);
+  min-height: 70vh;
+}
+
+#about__us hr,
+#our__mission hr,
+#join__us hr {
+  border-color: rgb(8, 9, 118);
+  border-width: 0.37rem;
+  width: 100%;
+  max-width: 5%;
+  margin: 0 auto 2rem;
+  /* min-height: 3vh; */
+}
+
+#our__mission hr {
+  border-color: yellow;
+}
+
+#our__mission {
+  background-image: linear-gradient(rgba(10, 10, 10, 0), rgba(10, 10, 10, 0.6)), url(../images/study-group.jpeg);
+  background-position: 80% 5%;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.our__mission--banner img {
+  margin-bottom: 3rem;
+  display: block;
+}
+
+.our__mission--desc {
+  background-color: rgba(10, 10, 10, 0.67);
+  padding: 0.85rem;
+  border-radius: 1.2rem;
+  height: auto;
+}
+
+form textarea {
+  min-height: 15rem;
+  max-height: 15rem;
+}
+
+#join__us {
+  background-image: url(../images/cropped-Global-harvest-logo_Icon_600x600-32x32.png);
+  background-repeat: repeat-x;
+}
+
+#join__us form textarea {
+  min-height: 20rem;
+  max-height: 20rem;
+}
+
+footer {
+  background-color: rgb(8, 9, 118);
+  color: #fff;
+  padding: 1.2rem 0;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+@keyframes animateTitle {
+  0% {
+    filter: (0.35);
+    color: #fff;
+    font-size: 1.2rem;
+    transform: scale(25%);
+    visibility: hidden;
+    opacity: 0.45;
+  }
+
+  50% {
+    opacity: 0.75;
+  }
+
+  100% {
+    /* filter: invert(0.75); */
+    color: yellow;
+    /* font-size: 2rem; */
+    transform: scale(50%);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 745px) {
+  .main__intro {
+    width: 80%;
+  }
+}
+
+@media (max-width: 466px) {
+  .main__intro {
+    width: 90%;
+  }
+}
